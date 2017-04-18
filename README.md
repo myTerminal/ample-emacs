@@ -8,7 +8,7 @@
 [![Gratipay](http://img.shields.io/gratipay/myTerminal.svg)](https://gratipay.com/myTerminal)
 [![Join the chat at https://gitter.im/myTerminal/ample-emacs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/myTerminal/ample-emacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-'Just enough' emacs configuration without external packages, also on Docker.
+'Just enough' emacs configuration with minimal external packages, also on Docker.
 
 ## Setup
 
@@ -31,7 +31,13 @@ Pull ample-emacs docker image and start `emacs`
 3. *ido-mode* enabled to save you precious key-strokes at many places
 4. Navigation through buffers simplified with [winner](http://emacswiki.org/emacs/WinnerMode) and [windmove](http://emacswiki.org/emacs/WindMove).
 7. No more welcome screen, Emacs starts up to greet you and shows the date
-8. Reload file in a buffer quickly with `<f5>`
+8. Only a few included standalone packages, with no dependency on external package archives
+9. Reload file in a buffer quickly with `<f5>`
+
+### Pre-configured packages
+
+1. [multiple-cursors](https://github.com/magnars/multiple-cursors.el) to be able to edit text in style
+2. [which-key](https://github.com/justbur/emacs-which-key) to be suggested with what you can do after pressing `C-x`
 
 ### Key-bindings
 
