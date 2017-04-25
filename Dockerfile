@@ -3,7 +3,7 @@ FROM myterminal/linux-dev
 MAINTAINER Mohammed Ismail Ansari <team.terminal@gmail.com>
 
 LABEL description "A docker image featuring ample-emacs"
-LABEL version "0.9.0"
+LABEL version "0.9.1"
 
 RUN useradd dev
 ENV HOME /home/dev

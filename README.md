@@ -38,6 +38,7 @@ Pull ample-emacs docker image and start `emacs`
 
 1. [multiple-cursors](https://github.com/magnars/multiple-cursors.el) to be able to edit text in style
 2. [which-key](https://github.com/justbur/emacs-which-key) to be suggested with what you can do after pressing `C-x`
+3. [ivy](https://github.com/abo-abo/swiper) (along with counsel and swiper) to make your life easy in general
 
 ### Key-bindings
 
