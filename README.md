@@ -12,6 +12,8 @@
 
 'Just enough' emacs configuration with minimal external packages, also on Docker.
 
+If you are looking for a configuration with super-powers, try [super-emacs](https://github.com/myTerminal/super-emacs)
+
 ## Setup
 
 Clone the repository with
