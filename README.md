@@ -12,8 +12,6 @@
 
 'Just enough' emacs configuration with minimal external packages, also on Docker.
 
-If you are looking for a configuration with super-powers, try [super-emacs](https://github.com/myTerminal/super-emacs)
-
 ## Setup
 
 Clone the repository with
@@ -47,3 +45,7 @@ Pull ample-emacs docker image and start `emacs`
 ### Key-bindings
 
 Refer [key-bindings.el](.emacs.d/ample-emacs/key-bindings.el) for all the pre-configured key-bindings for your convenience.
+
+## References
+
+If you are looking for a configuration with super-powers, try [super-emacs](https://github.com/myTerminal/super-emacs).
