@@ -28,19 +28,19 @@ Pull ample-emacs docker image and start `emacs`
 
 ## Features
 
-1. Minimal interface with almost everything except the window turned off
-2. The dark [wombat theme](https://github.com/jasonblewis/color-theme-wombat) applied by default, with a readable font-size
-3. *ido-mode* enabled to save you precious key-strokes at many places
-4. Navigation through buffers simplified with [winner](http://emacswiki.org/emacs/WinnerMode) and [windmove](http://emacswiki.org/emacs/WindMove).
-7. No more welcome screen, Emacs starts up to greet you and shows the date
-8. Only a few included standalone packages, with no dependency on external package archives
-9. Reload file in a buffer quickly with `<f5>`
+- Minimal interface with almost everything except the window turned off
+- The dark [wombat theme](https://github.com/jasonblewis/color-theme-wombat) applied by default, with a readable font-size
+- *ido-mode* enabled to save you precious key-strokes at many places
+- Navigation through buffers simplified with [winner](http://emacswiki.org/emacs/WinnerMode) and [windmove](http://emacswiki.org/emacs/WindMove).
+- No more welcome screen, Emacs starts up to greet you and shows the date
+- Only a few included standalone packages, with no dependency on external package archives
+- Reload file in a buffer quickly with `<f5>`
 
 ### Pre-configured packages
 
-1. [multiple-cursors](https://github.com/magnars/multiple-cursors.el) to be able to edit text in style
-2. [which-key](https://github.com/justbur/emacs-which-key) to be suggested with what you can do after pressing `C-x`
-3. [ivy](https://github.com/abo-abo/swiper) (along with counsel and swiper) to make your life easy in general
+- [multiple-cursors](https://github.com/magnars/multiple-cursors.el) to be able to edit text in style
+- [which-key](https://github.com/justbur/emacs-which-key) to be suggested with what you can do after pressing `C-x`
+- [ivy](https://github.com/abo-abo/swiper) (along with counsel and swiper) to make your life easy in general
 
 ### Key-bindings
 
