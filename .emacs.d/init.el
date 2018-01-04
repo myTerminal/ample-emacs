@@ -11,10 +11,10 @@
              "~/.emacs.d/standalone-packages/which-key")
 
 ;;Load configuration files
-(load-file "~/.emacs.d/ample-emacs/packages.el")
-(load-file "~/.emacs.d/ample-emacs/interface.el")
-(load-file "~/.emacs.d/ample-emacs/misc.el")
-(load-file "~/.emacs.d/ample-emacs/key-bindings.el")
+(load-file "~/.emacs.d/ample-emacs/01-packages.el")
+(load-file "~/.emacs.d/ample-emacs/02-interface.el")
+(load-file "~/.emacs.d/ample-emacs/03-misc.el")
+(load-file "~/.emacs.d/ample-emacs/04-key-bindings.el")
 
 ;;Print welcome message
 (princ (cl-concatenate 'string
