@@ -11,6 +11,7 @@
              "~/.emacs.d/standalone-packages/which-key")
 
 ;;Load configuration files
+(load-file "~/.emacs.d/ample-emacs/00-system.el")
 (load-file "~/.emacs.d/ample-emacs/01-packages.el")
 (load-file "~/.emacs.d/ample-emacs/02-interface.el")
 (load-file "~/.emacs.d/ample-emacs/03-misc.el")
