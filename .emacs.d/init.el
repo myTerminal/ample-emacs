@@ -18,12 +18,13 @@
 (load-file "~/.emacs.d/ample-emacs/04-key-bindings.el")
 
 ;;Print welcome message
-(princ (cl-concatenate 'string
-                       "Startup completed in "
-                       (number-to-string (cadr (time-subtract (current-time)
-                                                              ample-emacs/invokation-time)))
-                       " seconds\n\n"
-                       "Welcome to ample-emacs!\n\n"
-                       "Today's date: "
-                       (format-time-string "%B %d %Y"))
+(princ (concat "Welcome to ample-emacs!"
+               "\n\n"
+               "Today is "
+               (format-time-string "%B %d %Y")
+               "\n\n"
+               "(Started in "
+               (number-to-string (cadr (time-subtract (current-time)
+                                                      ample-emacs/invokation-time)))
+               " seconds)")
        (get-buffer-create (current-buffer)))
