@@ -34,6 +34,7 @@ Pull ample-emacs docker image and start `emacs`
 - No more welcome screen, Emacs starts up to greet you and shows the date
 - Only a few included standalone packages, with no dependency on external package archives
 - Reload file in a buffer quickly with `<f5>`
+- Some more configuration to improve usability
 
 ### Pre-configured packages
 
