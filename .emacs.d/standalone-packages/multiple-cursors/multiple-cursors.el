@@ -1,6 +1,6 @@
 ;;; multiple-cursors.el --- Multiple cursors for emacs.
 
-;; Copyright (C) 2012-2013 Magnar Sveen
+;; Copyright (C) 2012-2016 Magnar Sveen
 
 ;; Author: Magnar Sveen <magnars@gmail.com>
 ;; Version: 1.4.0
@@ -185,6 +185,10 @@
 ;; Thanks!
 
 ;;; Code:
+
+(defgroup multiple-cursors nil
+  "Multiple cursors for emacs."
+  :group 'editing)
 
 (require 'mc-edit-lines)
 (require 'mc-cycle-cursors)
