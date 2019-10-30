@@ -1,4 +1,4 @@
-(defvar ample-emacs--my-keyboard-bindings 
+(defvar ae/my-keyboard-bindings
   '(("C-}" . mc/mark-next-like-this)
     ("C-{" . mc/mark-previous-like-this)
     ("C-|" . mc/mark-all-like-this)
@@ -8,12 +8,7 @@
     ("C-x C-f" . counsel-find-file)
     ("C-s" . swiper)
     ("M-y" . counsel-yank-pop)
-    ("<f5>" . ample-emacs-reload-current-file)))
+    ("<f5>" . ae/reload-current-file)))
 
-(defun ample-emacs-apply-keyboard-bindings (pair)
-  "Apply keyboard-bindings for supplied list of key-pair values"
-  (global-set-key (kbd (car pair))
-                  (cdr pair)))
-
-(mapc 'ample-emacs-apply-keyboard-bindings
-      ample-emacs--my-keyboard-bindings)
+(mapc 'ae/assign-function-to-keys
+      ae/my-keyboard-bindings)
