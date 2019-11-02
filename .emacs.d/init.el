@@ -1,4 +1,5 @@
-(load-file "~/.emacs.d/ample-emacs/core.el")
+(load (expand-file-name "ample-emacs/core"
+			(file-name-directory load-file-name)))
 (ae/load-file "config-system")
 (ae/load-file "config-packages")
 (ae/load-file "config-interface")

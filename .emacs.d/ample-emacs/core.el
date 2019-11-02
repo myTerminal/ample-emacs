@@ -4,7 +4,7 @@
 
 ;;Define base-path
 (defvar ae/base-path
-  "~/.emacs.d/ample-emacs/")
+  (file-name-directory load-file-name))
 
 (defun ae/load-file (file-path)
   "Loads the specified file and also it's customized version, if it exists"
