@@ -1,5 +1,7 @@
+(defvar ae/config-root
+  (file-name-directory load-file-name))
 (load (expand-file-name "ample-emacs/core"
-			(file-name-directory load-file-name)))
+			ae/config-root))
 (ae/load-file "config-system")
 (ae/load-file "config-packages")
 (ae/load-file "config-interface")

@@ -1,10 +1,13 @@
 ;;Set paths for standalone packages
 (add-to-list 'load-path
-             "~/.emacs.d/standalone-packages/multiple-cursors")
+             (concat ae/config-root
+                     "standalone-packages/multiple-cursors"))
 (add-to-list 'load-path
-             "~/.emacs.d/standalone-packages/ivy")
+             (concat ae/config-root
+                     "standalone-packages/ivy"))
 (add-to-list 'load-path
-             "~/.emacs.d/standalone-packages/which-key")
+             (concat ae/config-root
+                     "standalone-packages/which-key"))
 
 ;;Load multiple-cursors
 (require 'multiple-cursors)
