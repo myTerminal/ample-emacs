@@ -1,14 +1,17 @@
 (defvar ae/my-keyboard-bindings
-  '(("C-}" . mc/mark-next-like-this)
+  '(;;Buffer/Window management
+    ("C-x b" . ivy-switch-buffer)
+    ("C-x C-f" . counsel-find-file)
+    ("C-x C-r" . counsel-recentf)
+    ;;Text-editing
+    ("C-}" . mc/mark-next-like-this)
     ("C-{" . mc/mark-previous-like-this)
     ("C-|" . mc/mark-all-like-this)
-    ("M-x" . counsel-M-x)
-    ("C-x b" . ivy-switch-buffer)
-    ("C-x C-r" . counsel-recentf)
-    ("C-x C-f" . counsel-find-file)
-    ("C-s" . swiper)
     ("M-y" . counsel-yank-pop)
-    ("<f5>" . ae/reload-current-file)))
+    ("C-s" . swiper)
+    ("<f5>" . ae/reload-current-file)
+    ;;Misc
+    ("M-x" . counsel-M-x)))
 
 (mapc 'ae/assign-function-to-keys
       ae/my-keyboard-bindings)
