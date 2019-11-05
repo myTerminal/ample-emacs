@@ -9,19 +9,25 @@
 [![License](https://img.shields.io/badge/LICENSE-GPL%20v3.0-blue.svg)](https://www.gnu.org/licenses/gpl.html)
 [![Join the chat at https://gitter.im/myTerminal/ample-emacs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/myTerminal/ample-emacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-'Just enough' emacs configuration with minimal external packages, also on Docker.
+'Just enough' Emacs configuration with minimal external packages
 
 ## Setup
 
 Clone the repository with
 
-    git clone https://github.com/myTerminal/ample-emacs
+    git clone https://github.com/myTerminal/ample-emacs.git
 
-or download the repository as an archive and place it at your `home` directory. Once done, start Emacs to find *ample-emacs*.
+The only requirement for these configs to be used by your Emacs is that the directory [.emacs.d](.emacs.d) should be at the root of your home directory.
+
+You can either place it there manually or otherwise create a soft-link from its location to home. One advantage of the second method is that you can seamlessly pull updates from upstream without any manual steps.
+
+    ln -s </path/to/cloned/project>/ample-emacs/.emacs.d ~/.emacs.d
+
+Once done, start Emacs to get running within a few seconds.
 
 ## Docker
 
-Pull ample-emacs docker image and start `emacs`
+*ample-emacs* is also available on Docker. To start it, run a command that looks like:
 
     docker pull myterminal/ample-emacs
 
@@ -52,6 +58,6 @@ Refer [config-key-bindings.el](.emacs.d/ample-emacs/config-key-bindings.el) for 
 
 All configuration files under [.emacs.d/ample-emacs](.emacs.d/ample-emacs) with a name starting with `config-` can be extended by creating another file next to it with the same name but ending with a `-custom.el`. For example, if you plan to extend the file [config-packages.el](.emacs.d/ample-emacs/config-packages.el), you can create a file with the name `config-packages-custom.el` next to it in order to hold custom configuration. *ample-emacs* will load the original file first followed by the custom file (if it exists) in the right order as designed and you will achieve the effect you desire. Whenever there's an update to the original file, there will be no merge conflicts and life would be so much simpler!
 
-## References
+## More
 
-If you are looking for a configuration with super-powers, try [super-emacs](https://github.com/myTerminal/super-emacs).
+If you're looking for a configuration with super-powers, try [super-emacs](https://github.com/myTerminal/super-emacs).
