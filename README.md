@@ -13,25 +13,33 @@
 
 ## Setup
 
-Clone the repository with
+*ample-emacs* can be used in two ways.
+
+### GitHub
+
+Getting it from GitHub is easier of the two methods. You just need to clone the repository on your local workspace like:
 
     git clone https://github.com/myTerminal/ample-emacs.git
 
-The only requirement for these configs to be used by your Emacs is that the directory [.emacs.d](.emacs.d) should be at the root of your home directory.
+Then the only next step would be to make sure that [.emacs.d](.emacs.d) is at the root of your home directory.
 
-You can either place it there manually or otherwise create a soft-link from its location to home. One advantage of the second method is that you can seamlessly pull updates from upstream without any manual steps.
+You can either place it there manually or otherwise create a soft-link from its location to the home directory.
 
     ln -s </path/to/cloned/project>/ample-emacs/.emacs.d ~/.emacs.d
 
-Once done, start Emacs to get running within a few seconds.
+A clear advantage of the above method would be that you can pull updates from upstream with almost no effort.
 
-## Docker
+Once done, start Emacs and get running within seconds.
+
+### Docker Hub
 
 *ample-emacs* is also available on Docker. To start it, run a command that looks like:
 
     docker pull myterminal/ample-emacs
 
 ## Features
+
+### Highlights
 
 - Minimal interface with almost everything except the window turned off
 - The dark [wombat theme](https://github.com/jasonblewis/color-theme-wombat) applied by default, with a readable font-size
@@ -48,7 +56,7 @@ Once done, start Emacs to get running within a few seconds.
 - [which-key](https://github.com/justbur/emacs-which-key) to be suggested with what you can do after pressing `C-x`
 - [ivy](https://github.com/abo-abo/swiper) (along with counsel and swiper) to make your life easy in general
 
-### Key-bindings
+### Major differences over stock Emacs
 
 Refer [config-key-bindings.el](.emacs.d/ample-emacs/config-key-bindings.el) for all the pre-configured key-bindings for your convenience.
 
