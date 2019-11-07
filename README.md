@@ -52,11 +52,13 @@ Once done, start Emacs and get running within seconds.
 
 ### Pre-configured packages
 
-- [multiple-cursors](https://github.com/magnars/multiple-cursors.el) to be able to edit text in style
-- [which-key](https://github.com/justbur/emacs-which-key) to be suggested with what you can do after pressing `C-x`
-- [ivy](https://github.com/abo-abo/swiper) (along with counsel and swiper) to make your life easy in general
+*ample-emacs* is designed to be minimalistic and hence just comes with the below pre-configured packages.
 
-### Major differences over stock Emacs
+- [multiple-cursors](https://github.com/magnars/multiple-cursors.el) to allow spawning of multiple cursors to editing text that follows a particular pattern
+- [which-key](https://github.com/justbur/emacs-which-key) to provide instant help around key-bindings as you press keys
+- [ivy](https://github.com/abo-abo/swiper) (along with counsel and swiper) to make your experience with Emacs better
+
+### Added key-bindings over stock Emacs
 
 Refer [config-key-bindings.el](.emacs.d/ample-emacs/config-key-bindings.el) for all the pre-configured key-bindings for your convenience.
 
