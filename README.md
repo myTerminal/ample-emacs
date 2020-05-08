@@ -31,6 +31,12 @@ A clear advantage of the above method would be that you can pull updates from up
 
 Once done, start Emacs and get running within seconds.
 
+#### XDG support in Emacs 27+
+
+Emacs 27 [comes with XDG support](https://git.savannah.gnu.org/cgit/emacs.git/commit/?id=4118297ae2fab4886b20d193ba511a229637aea3) and hence will also work with `~/.config/emacs`. To be able to use *ample-emacs* that way (which may as well be the only way soon), you can link it in the following way:
+
+    ln -s </path/to/cloned/project>/ample-emacs/.emacs.d ~/.config/emacs
+
 ### Docker Hub
 
 *ample-emacs* is also available on Docker. To start it, run a command that looks like:
