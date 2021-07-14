@@ -1,14 +1,14 @@
-;;Startup
+;; Startup
 (setq initial-buffer-choice
       t)
 (setq initial-scratch-message
       "")
 
-;;Interface
+;; Interface
 (menu-bar-mode -1)
 (ido-mode t)
 
-;;Text editing
+;; Text editing
 (electric-pair-mode)
 (show-paren-mode)
 (global-hl-line-mode -1)
@@ -20,7 +20,7 @@
       t)
 (prefer-coding-system 'utf-8-unix)
 
-;;Package archives and 'customize'
+;; Package archives and 'customize'
 (setq custom-file
       (concat ae/config-root
               "custom.el"))
@@ -30,6 +30,6 @@
 (setq package--init-file-ensured
       t)
 
-;;Misc
+;; Misc
 (winner-mode t)
 (windmove-default-keybindings)

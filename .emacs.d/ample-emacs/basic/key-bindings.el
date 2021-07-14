@@ -1,16 +1,16 @@
 (defvar ae/my-keyboard-bindings
-  '(;;Buffer/Window management
+  '(;; Buffer/Window management
     ("C-x b" . ivy-switch-buffer)
     ("C-x C-f" . counsel-find-file)
     ("C-x C-r" . counsel-recentf)
-    ;;Text-editing
+    ;; Text-editing
     ("C-}" . mc/mark-next-like-this)
     ("C-{" . mc/mark-previous-like-this)
     ("C-|" . mc/mark-all-like-this)
     ("M-y" . counsel-yank-pop)
     ("C-s" . swiper)
     ("<f5>" . ae/reload-current-file)
-    ;;Misc
+    ;; Misc
     ("M-x" . counsel-M-x)))
 
 (mapc 'ae/assign-function-to-keys
