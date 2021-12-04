@@ -7,14 +7,14 @@
 (defun ae/start ()
   "Loads core and then conditionally loads configs."
   (cl-flet* ((start-basic ()
-                          (ae/load-file "basic/misc")
-                          (ae/load-file "basic/packages")
-                          (ae/load-file "basic/key-bindings"))
+                          (ae/load-file "modes/basic/misc")
+                          (ae/load-file "modes/basic/packages")
+                          (ae/load-file "modes/basic/key-bindings"))
              (start-standard ()
-                            (ae/load-file "standard/misc")
-                            (ae/load-file "standard/packages")
-                            (ae/load-file "standard/key-bindings")))
-    (load (expand-file-name "ample-emacs/core"
+                             (ae/load-file "modes/standard/misc")
+                             (ae/load-file "modes/standard/packages")
+                             (ae/load-file "modes/standard/key-bindings")))
+    (load (expand-file-name "core"
 			                ae/config-root))
     (start-basic)
     (if (display-graphic-p)

@@ -4,8 +4,10 @@
 
 !/.emacs.d
 /.emacs.d/*
-!/.emacs.d/ample-emacs
+!/.emacs.d/modes
 !/.emacs.d/standalone-packages
+!/.emacs.d/core.el
+!/.emacs.d/lib.el
 !/.emacs.d/init.el
 
 !/Dockerfile
