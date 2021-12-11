@@ -18,7 +18,10 @@
                                  (message "File reloaded")))
         (t (message "You're not editing a file!"))))
 
-(defun ae/assign-function-to-keys (pair)
-  "Apply keyboard-bindings for supplied list of key-pair values."
-  (global-set-key (kbd (car pair))
-                  (cdr pair)))
+(defun ae/bind-keys (bindings keymap)
+  "Applies supplied key-bindings for a particular keymap"
+  (mapc (lambda (b)
+          (define-key keymap
+            (kbd (car b))
+            (cdr b)))
+        bindings))
