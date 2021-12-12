@@ -17,13 +17,13 @@
 
 ### GitHub
 
-Getting it from GitHub is easier of the two methods. You just need to clone the repository on your local workspace like:
+Getting it from GitHub is the easier of the two methods. You just need to clone the repository on your local workspace like:
 
     git clone https://github.com/myTerminal/ample-emacs.git
 
 Then the only next step would be to make sure that [.emacs.d](.emacs.d) is at the root of your home directory.
 
-You can either place it there manually or otherwise create a soft-link from its location to the home directory.
+You can either place it there manually or otherwise create a soft link from its location to the home directory.
 
     ln -s </path/to/cloned/project>/ample-emacs/.emacs.d ~/.emacs.d
 
@@ -39,7 +39,7 @@ Emacs 27 [comes with XDG support](https://git.savannah.gnu.org/cgit/emacs.git/co
 
 ### Docker Hub
 
-*ample-emacs* is also available on Docker. To start it, run a command that looks like:
+*ample-emacs* is also available on Docker. To start it, run a command that looks like this:
 
     docker pull myterminal/ample-emacs
 
@@ -54,7 +54,7 @@ Emacs 27 [comes with XDG support](https://git.savannah.gnu.org/cgit/emacs.git/co
 - No more welcome screen, Emacs starts up to greet you and shows the date
 - Only a few included standalone packages, with no dependency on external package archives
 - Reload file in a buffer quickly with `<f5>`
-- Some more configuration to improve usability
+- Some more configurations to improve the usability
 - Adaptive behavior between graphical and non-graphical mode
 
 ### Pre-configured packages
@@ -77,4 +77,4 @@ All configuration files under [.emacs.d/modes/basic](.emacs.d/modes/basic) and [
 
 ## More
 
-If you're looking for a configuration with super-powers, try [super-emacs](https://github.com/myTerminal/super-emacs).
+If you're looking for a configuration with superpowers, try [super-emacs](https://github.com/myTerminal/super-emacs).
