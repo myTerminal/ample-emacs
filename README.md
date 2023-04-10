@@ -11,6 +11,8 @@
 
 'Just enough' Emacs configuration with minimal external packages
 
+> **Note:** This project is not maintained anymore.
+
 ## Setup
 
 *ample-emacs* can be used in two ways.
